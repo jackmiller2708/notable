@@ -1,0 +1,31 @@
+.sidebar-container
+  height: 100%
+  background: rgb(247, 246, 243)
+  transition: width 350ms cubic-bezier(.34, .71, .49, 1)
+
+  .sidebar-item-container
+    position: relative
+    top: 0
+    right: 0
+    width: 24rem
+    transition: top 350ms cubic-bezier(.34, .71, .49, 1), right 350ms cubic-bezier(.34, .71, .49, 1), box-shadow 350ms ease
+
+    &.sticky
+      z-index: 999
+      top: 5.5rem
+      box-shadow: rgb(15 15 15 / 5%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 3px 6px, rgb(15 15 15 / 20%) 0px 9px 24px
+      right: 24rem
+      background: #fff
+
+      &::after
+        position: absolute
+        z-index: -1
+        top: -2.2rem
+        right: -5rem
+        width: 130%
+        height: 120%
+        background: transparent
+        content: ''
+
+    &.sticky-expand
+      right: 0

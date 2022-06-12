@@ -1,0 +1,6 @@
+<div class="switcher-container">
+  <p>account switcher</p>
+  <div class="close-btn" *ngIf="isExpaned" [style.opacity]="isMouseEnterSidebar ? 1 : 0" (click)="onCloseSideBarBtnClick()">
+    <fa-icon [icon]="closeBtnIcon"></fa-icon>
+  </div>
+</div>

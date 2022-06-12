@@ -1,0 +1,14 @@
+<div class="header-container">
+  <div class="header-title">
+    <div
+      *ngIf="!isSideBarExpanded"
+      class="open-btn"
+      (mouseenter)="onOpenSideBarBtnMouseEnter()"
+      (mouseleave)="onOpenSideBarBtnMouseLeave()"
+      (click)="onOpenSideBarBtnClick()"
+    >
+      <fa-icon [icon]="openBtnIcon"></fa-icon>
+    </div>
+    <p>content-header works!</p>
+  </div>
+</div>

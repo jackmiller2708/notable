@@ -1,0 +1,7 @@
+<div class="sidebar-container" [style.width.rem]="currentWidth">
+  <div class="sidebar-item-container" [class.sticky]="!isExpanded" [class.sticky-expand]="!isExpanded && isMouseEnter">
+    <app-sidebar-switcher [isMouseEnterSidebar]="isMouseEnter"></app-sidebar-switcher>
+    <app-sidebar-tools></app-sidebar-tools>
+    <app-sidebar-private></app-sidebar-private>
+  </div>
+</div>
