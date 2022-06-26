@@ -1,0 +1,7 @@
+<div class="editor-root" contenteditable spellcheck="false" (beforeinput)="onEditorBeforeInput($event)" (keydown)="onEditorKeyPressed($event)">
+  <div *ngFor="let nodeMap of editorData; let i = index" [attr.data-id]="i" class="{{nodeMap.get('type')}}">
+    <ng-container *ngFor="let textNode of $any(nodeMap.get('children')); let y = index">
+      <span class="leaf-text leaf" [attr.data-id]="y">{{textNode.get('text')}}</span>
+    </ng-container>
+  </div>
+</div>

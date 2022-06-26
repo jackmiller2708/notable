@@ -2,7 +2,7 @@
   <div class="header-wrapper">
     <app-content-header></app-content-header>
   </div>
-  <div class="body-wrapper">
-    <p>notable-content works!</p>
+  <div class="body-wrapper" [class.safe-space-adjusted]="!isSidebarExpanded">
+    <app-noteable-editor></app-noteable-editor>
   </div>
 </div>
